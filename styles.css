@@ -23,7 +23,7 @@ body {
 }
 
 .display {
-    flex: 3.6;
+    flex: 3.35;
     background-color: #61B34F;
     color: white;
     display: flex;
@@ -32,6 +32,7 @@ body {
     padding: 0 1em;
     border-bottom: solid 1px whitesmoke;
     border-right: solid 1px whitesmoke;
+    font-size: 1.6em;
 }
 
 .button {
@@ -50,11 +51,35 @@ body {
     align-items: center;
 }
 
-button:focus {
-    outline: none;
+#keyEqual {
+    border-bottom: solid 1px whitesmoke;
+    border-right: solid whitesmoke 1px;
+    border-width: 1px;
+    background-color: #61B34F;
+    flex: 1;
+    width: 3em;
+    height: 3.3em;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .light-green-button {
+    border-bottom: solid 1px whitesmoke;
+    border-right: solid whitesmoke 1px;
+    border-width: 1px;
+    flex: 1;
+    width: 3em;
+    height: 3.3em;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #82C276;
     color: darkgreen;
 }
@@ -63,11 +88,7 @@ button:focus {
     color: white;
 }
 
-#key7, #key4, #key1, #key0 {
-    border-left: solid whitesmoke 1px;
-}
-
-#keyC:hover, #keyDecimal:hover, #keyEqual:hover {
+#clear:hover, #keyDecimal:hover, #keyEqual:hover {
     background-color: #82C276;
 }
 
@@ -75,10 +96,10 @@ button:focus {
     /* .container {
         background-color: skyblue;
     } */
-    .button {
+    .button, #keyEqual, #keySqRt {
         font-size: 1.2em;
     }
     #display {
-        flex: 3.45;
+        flex: 3.1;
     }
 }
