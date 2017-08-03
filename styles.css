@@ -16,26 +16,20 @@ body {
     /* background-color: tomato; */
 }
 
-
-/* .calculator {
-    width: 22em;
-} */
-
 .row {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-#display {
-    flex: 3.62;
+.display {
+    flex: 3.6;
     background-color: #61B34F;
     color: white;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 0 1em;
-    width: 100%;
     border-bottom: solid 1px whitesmoke;
     border-right: solid 1px whitesmoke;
 }
@@ -56,6 +50,10 @@ body {
     align-items: center;
 }
 
+button:focus {
+    outline: none;
+}
+
 .light-green-button {
     background-color: #82C276;
     color: darkgreen;
@@ -65,12 +63,8 @@ body {
     color: white;
 }
 
-#keyC, #key7, #key4, #key1, #key0 {
+#key7, #key4, #key1, #key0 {
     border-left: solid whitesmoke 1px;
-}
-
-#keyC, #display {
-    border-top: solid whitesmoke 1px;
 }
 
 #keyC:hover, #keyDecimal:hover, #keyEqual:hover {
@@ -85,6 +79,6 @@ body {
         font-size: 1.2em;
     }
     #display {
-        flex: 3.5;
+        flex: 3.45;
     }
 }
