@@ -6,7 +6,7 @@ let equals = document.querySelector("#keyEqual");
 let squareRt = document.querySelector("#keySqRt");
 let output = [];
 let body = document.querySelector("body");
-let outputIndex;
+let outputIndex = [];
 
 squareRt.addEventListener("click", function (e) {
     display.innerHTML = Math.sqrt(display.innerHTML);
@@ -37,21 +37,6 @@ clear.addEventListener("click", function () {
 
 
 
-body.addEventListener("keydown", function (e) {
-    if (e.keyCode === 38) {
-        if (outputIndex < 0) {
-            outputIndex = output[0];
-        }
-        display.innerHTML = output[outputIndex];
-        outputIndex--;
-    } else if (e.keyCode === 40) {
-        if (outputIndex >= output.length) {
-            outputIndex = output.length - 1;
-        }
-        display.innerHTML = output[outputIndex];
-        outputIndex++;
-    }
-});
 
 
 
